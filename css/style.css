@@ -1,0 +1,36 @@
+:root{
+    --blanco: #ffffff;
+    --oscuro: #212121;
+    --primario: #ffc107;
+    --tituloPrincipal: #140557;
+    --freelancer1: rgba(255, 166, 0, 0.986);
+
+    --fuentePrincipal: 3.8rem;
+
+}
+
+html{
+    font-size: 62.5%;
+
+}
+body{
+    font-size: 16px;
+    font-family: 'Crimson Text', serif;
+}
+.titulo{
+    text-align: center;
+    font-size: var(--fuentePrincipal);
+    color: var(--tituloPrincipal);
+    font-family: 'Redressed', cursive;
+    
+}
+h1.titulo span{
+
+    font-size: 20px;
+    font-size: 2rem;
+    color: var(--freelancer1);
+}
+.titulo span{
+    font-size: 2rem;
+    color: var(--freelancer1);
+}
