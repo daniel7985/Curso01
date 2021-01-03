@@ -14,8 +14,14 @@
 
 html{
     font-size: 62.5%;
+    box-sizing: border-box;
 
 }
+*,*:before, *:after{
+    box-sizing: inherit;
+}
+
+
 body{
     font-size: 16px;
     font-family: 'Crimson Text', serif;
@@ -75,4 +81,18 @@ h1.titulo span{
 
 .hero{
     background-image: url(../img/hero2.jpg);
+    background-repeat: no-repeat;
+    background-size: cover;
+    height: 450px;
+    padding: 20px;
+    position: relative;
+}
+.contenido-hero{
+    position: absolute;
+    background-color: rgba(0,0,0,.7);
+    right: 0;
+    left: 0;
+    top: 0;
+    bottom: 0;
+    
 }
