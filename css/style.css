@@ -72,3 +72,7 @@ h1.titulo span{
         justify-content: space-evenly;
     }
 }
+
+.hero{
+    background-image: url(../img/hero2.jpg);
+}
