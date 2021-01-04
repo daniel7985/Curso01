@@ -1,5 +1,5 @@
 :root{
-    /* Colores */
+    /* -------------Colores------------- */
     --blanco: #ffffff;
     --oscuro: #212121;
     --primario: #ffc107;
@@ -7,11 +7,12 @@
     --freelancer1: rgba(255, 166, 0, 0.986);
     --colorNavegacion: rgb(37, 37, 51);
     --familiaTitulo: 'Redressed', cursive;
+    --colorDegradado: rgb(13, 59, 145);
 
     --fuentePrincipal: 3.8rem;
 
 }
-
+/* -------------globales-------------*/
 html{
     font-size: 62.5%;
     box-sizing: border-box;
@@ -25,9 +26,50 @@ html{
 body{
     font-size: 16px;
     font-family: 'Crimson Text', serif;
+    background-image: linear-gradient(to top,#c6dbf0 0%, white 100%);
 }
-.titulo{
+
+/* -------------tipografia------------- */
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
     text-align: center;
+}
+.contenedor{
+    max-width: 120rem;
+    margin: 0 auto;
+
+}
+.botones{
+    background-color: var(--colorNavegacion);
+    text-decoration: none;
+    color: white;
+    padding: 1rem 3rem;
+    margin-top: 3rem;
+    font-size: 2rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    border-radius: .5rem;
+    width: 90%;
+    text-align: center;
+
+}
+@media (min-width: 560px) {
+    .botones{
+        width: auto;
+    }
+}
+
+/* -------------titulos------------- */
+.titulo{
     font-size: var(--fuentePrincipal);
     color: var(--tituloPrincipal);
     font-family: var(--familiaTitulo);
@@ -44,14 +86,9 @@ h1.titulo span{
     color: var(--freelancer1);
 }
 
-.contenedor{
-    max-width: 120rem;
-    margin-top: 0;
-    margin-bottom: 0;
-    margin-left: auto;
-    margin-right: auto;
 
-}
+/* -------------navegacion principal-------------*/
+
 .nav-bg{
     background-color: var(--colorNavegacion);
 }
@@ -78,13 +115,12 @@ h1.titulo span{
         justify-content: space-evenly;
     }
 }
-
+/*  -------------imagen hero y elementos------------- */
 .hero{
-    background-image: url(../img/hero2.jpg);
+    background-image: url(../img/hero.jpg);
     background-repeat: no-repeat;
     background-size: cover;
     height: 450px;
-    padding: 20px;
     position: relative;
 }
 .contenido-hero{
@@ -94,5 +130,20 @@ h1.titulo span{
     left: 0;
     top: 0;
     bottom: 0;
+
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     
+}
+.contenido-hero h2, 
+.contenido-hero p {
+    color: white;
+
+
+
+}
+.contenido-hero p {
+    font-size: 2rem;
 }
