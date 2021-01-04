@@ -28,21 +28,11 @@ body{
     font-family: 'Crimson Text', serif;
     background-image: linear-gradient(to top,#c6dbf0 0%, white 100%);
 }
-
-/* -------------tipografia------------- */
-
-h1{
-    font-size: 3.8rem;
-}
-h2{
-    font-size: 2.8rem;
-}
-h3{
-    font-size: 1.8rem;
-}
-h1,h2,h3{
+.contenedor p {
     text-align: center;
 }
+
+
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
@@ -67,6 +57,32 @@ h1,h2,h3{
         width: auto;
     }
 }
+
+.sombra{
+    width: 70rem;
+    padding: 2rem;
+    -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
+    box-shadow: rgba(112,112,112,0.54);
+    background-color: white;
+    border-radius: 2rem;
+}
+
+/* -------------tipografia------------- */
+
+h1{
+    font-size: 3.8rem;
+}
+h2{
+    font-size: 2.8rem;
+}
+h3{
+    font-size: 1.8rem;
+}
+h1,h2,h3{
+    text-align: center;
+}
+
 
 /* -------------titulos------------- */
 .titulo{
@@ -122,6 +138,7 @@ h1.titulo span{
     background-size: cover;
     height: 450px;
     position: relative;
+    margin-bottom: 2rem;
 }
 .contenido-hero{
     position: absolute;
@@ -147,3 +164,13 @@ h1.titulo span{
 .contenido-hero p {
     font-size: 2rem;
 }
+/*  -------------Servicios------------- */
+@media (min-width: 760px){
+    .servicios{
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr; /* ó  grid-template-columns: repeat(3,fr);*/
+
+
+}
+}
+
