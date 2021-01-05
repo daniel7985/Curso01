@@ -47,9 +47,9 @@
     <main class="contenedor sombra">
         <h2>Mis servicios</h2>
         <div class="servicios">
-            <section>
+            <section class="servicio">
                 <h3>Diseño Web  </h3>
-                <p>
+                <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-palette" width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <path d="M12 21a9 9 0 1 1 0 -18a9 8 0 0 1 9 8a4.5 4 0 0 1 -4.5 4h-2.5a2 2 0 0 0 -1 3.75a1.3 1.3 0 0 1 -1 2.25" />
@@ -57,13 +57,13 @@
                         <circle cx="12" cy="7.5" r=".5" fill="currentColor" />
                         <circle cx="16.5" cy="10.5" r=".5" fill="currentColor" />
                     </svg>
-                </p>
-                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, atque.</p>
+                </div>
+                <p>Lorem ipsum dolor sit, amet consectetur adipisicing elit. Voluptates, atque.Lorem ipsum dolor sit amet. loreLorem ipsum dolor sit amet. lore</p>
 
             </section>
-            <section>
+            <section class="servicio">
                 <h3>Aplicaciones moviles</h3>
-                <p>
+                <div class="iconos">
                     <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-brand-android" width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
                         <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
                         <line x1="4" y1="10" x2="4" y2="16" />
@@ -74,56 +74,57 @@
                         <line x1="9" y1="18" x2="9" y2="21" />
                         <line x1="15" y1="18" x2="15" y2="21" />
                     </svg>
-                </p>
-                <p>Lorem ipsum dolor sit amet.</p>
+                </div>
+                <p>Lorem ipsum dolor sit amet. lore.Lorem ipsum dolor sit amet. lore.Lorem ipsum dolor sit amet. lore</p>
             </section>
-        <section>
-                <h3>E-Commerce</h3>
-                <P>
-                    <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
-                        <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
-                        <circle cx="12" cy="12" r="9" />
-                        <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
-                        <path d="M12 6v2m0 8v2" />
-                    </svg>
-                </P>
-                <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.</p>
+            <section class="servicio">
+                    <h3>E-Commerce</h3>
+                    <div class="iconos">
+                        <svg xmlns="http://www.w3.org/2000/svg" class="icon icon-tabler icon-tabler-coin" width="84" height="84" viewBox="0 0 24 24" stroke-width="1.5" stroke="#ffbf00" fill="none" stroke-linecap="round" stroke-linejoin="round">
+                            <path stroke="none" d="M0 0h24v24H0z" fill="none"/>
+                            <circle cx="12" cy="12" r="9" />
+                            <path d="M14.8 9a2 2 0 0 0 -1.8 -1h-2a2 2 0 0 0 0 4h2a2 2 0 0 1 0 4h-2a2 2 0 0 1 -1.8 -1" />
+                            <path d="M12 6v2m0 8v2" />
+                        </svg>
+                    </div>
+                    <p>Lorem ipsum dolor sit amet consectetur, adipisicing elit.Lorem ipsum dolor sit amet. lore.Lorem ipsum dolor sit amet. lore</p>
+        
+            </section>
+        </div>
     
-        </section>
-    </div>
-    </main>
     
     <section>
         <h2>Contactos</h2>
-        <form >
+        <form class="formulario">
             <fieldset>
                 <legend>
-                    Contactanos llenado todos los cambios
+                    Contactanos llenando todos los campos
                 </legend>
+                <div class="contenedor-campos">
+                    <div class="compos">
+                        <label >
+                            Nombre
+                        </label>
+                        <input type="text" placeholder=" Tu Nombre">
+                    </div>
 
-                <div>
-                    <label >
-                        Nombre
-                    </label>
-                    <input type="text" placeholder=" Tu Nombre">
-                </div>
+                    <div class="compos">
+                        <label >
+                            Telefono
+                        </label>
+                        <input type="tel" placeholder="Tu telefono">
+                    </div>
+                    <div class="compos">
+                        <label >
+                            Correo
+                        </label>
+                        <input type="email" placeholder="Tu correo">
+                    </div>
 
-                <div>
-                    <label >
-                        Telefono
-                    </label>
-                    <input type="tel" placeholder="Tu telefono">
-                </div>
-                <div>
-                    <label >
-                        Correo
-                    </label>
-                    <input type="email" placeholder="Tu correo">
-                </div>
-
-                <div>
-                <label >Mensaje</label>
-                <textarea ></textarea>
+                    <div class="compos">
+                    <label >Mensaje</label>
+                    <textarea ></textarea>
+                    </div>
                 </div>
 
                 <div>
@@ -136,7 +137,7 @@
             </fieldset>
         </form>
     </section>
-    
+    </main>
     <footer>
         <p>Todos los derechos reservados. Daniel Bonilla Muñoz</p>
         

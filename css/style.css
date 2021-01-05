@@ -28,11 +28,8 @@ body{
     font-family: 'Crimson Text', serif;
     background-image: linear-gradient(to top,#c6dbf0 0%, white 100%);
 }
-.contenedor p {
-    text-align: center;
-}
 
-
+nedor
 .contenedor{
     max-width: 120rem;
     margin: 0 auto;
@@ -59,13 +56,17 @@ body{
 }
 
 .sombra{
-    width: 70rem;
+
+    
     padding: 2rem;
     -webkit-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
     -moz-box-shadow: 0px 5px 15px 0px rgba(112,112,112,0.54);
     box-shadow: rgba(112,112,112,0.54);
     background-color: white;
     border-radius: 2rem;
+    width: 70rem;
+    margin: 0 auto;
+    
 }
 
 /* -------------tipografia------------- */
@@ -169,8 +170,49 @@ h1.titulo span{
     .servicios{
     display: grid;
     grid-template-columns: 1fr 1fr 1fr; /* ó  grid-template-columns: repeat(3,fr);*/
-
+    column-gap: 5rem; /*separacion de columnas*/
 
 }
 }
+.servicio{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
+.servicio h3{
+    color: var(--colorNavegacion);
 
+}
+.servicio p{
+    line-height: 2;
+    text-align: center;
+}
+.servicio .iconos{
+    height: 15rem;
+    width: 15rem;
+    background-color: var(--colorNavegacion);
+    border-radius: 50%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+
+}
+/*  -------------formulario------------- */
+.formulario{
+    background-color: gray;
+    width: min(60rem,100%);
+    margin: 0 auto;
+    padding: 2rem;
+    border-radius: 1rem;
+}
+.formulario fieldset{
+    border: none;
+
+}
+.formulario legend{
+    text-align: center;
+    font-size: 1.8rem;
+    text-transform: uppercase;
+    font-weight: bold;
+    margin-bottom: 2rem;
+}   
